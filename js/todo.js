@@ -23,7 +23,12 @@ function paintToDo(newTodo) {
     const span = document.createElement("span");
     span.innerText = newTodo.text;
     const button = document.createElement("button");
-    button.innerText = "💔";
+    button.innerText = "✨";
+    button.style.border = 0;
+    button.style.borderRadius = "15px";
+    button.style.fontSize = "15px";
+    button.style.marginLeft = "5px";
+    button.style.backgroundColor = "rgba(226, 170, 226, 0)";
     button.addEventListener("click", deleteToDo);
     li.appendChild(span);
     li.appendChild(button);
